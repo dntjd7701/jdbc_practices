@@ -13,6 +13,10 @@ public class InsertTest02 {
 		insert("기획");
 	}
 	
+	
+	
+	
+	
 	public static boolean insert(String name) {
 		Connection conn = null;
 		PreparedStatement pstmt = null;
@@ -40,6 +44,8 @@ public class InsertTest02 {
 			int count = pstmt.executeUpdate();
 			result = count == 1;
 			
+			
+			
 		} catch (ClassNotFoundException e) {
 			System.out.println("드라이버 로딩 실패:" + e);
 		} catch (SQLException e) {
@@ -57,6 +63,9 @@ public class InsertTest02 {
 				e.printStackTrace();
 			}
 		}
+		
+		
+		
 		
 		return result;
 	}

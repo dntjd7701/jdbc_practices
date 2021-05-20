@@ -9,6 +9,7 @@ desc book;
 select no, name from author;
 
 -- Book: insert
-insert into book values(null, ''
+-- insert into book values(null, '');
+
  
 
