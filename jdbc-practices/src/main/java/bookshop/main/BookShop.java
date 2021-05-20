@@ -25,7 +25,7 @@ public class BookShop {
 		
 		List<BookVo> list = new BookDao().findAll();
 		for(BookVo vo : list) {
-			
+			System.out.println(vo);
 		}
 		
 	}

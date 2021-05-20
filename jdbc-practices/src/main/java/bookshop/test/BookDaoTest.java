@@ -6,7 +6,7 @@ import bookshop.vo.BookVo;
 public class BookDaoTest {
 
 	public static void main(String[] args) {
-		// insertTest();
+//		 insertTest();
 	}
 
 	private static void insertTest() {
@@ -54,6 +54,7 @@ public class BookDaoTest {
 		vo.setTitle("아프니깐 청춘이다");
 		new BookDao().insert(vo);
 
+		
 		vo = new BookVo();
 		vo.setAuthorNo(6L);
 		vo.setStatus("대여가능");
@@ -64,6 +65,12 @@ public class BookDaoTest {
 		vo.setAuthorNo(7L);
 		vo.setStatus("대여가능");
 		vo.setTitle("태백산맥");
+		new BookDao().insert(vo);
+		
+		vo = new BookVo();
+		vo.setAuthorNo(1L);
+		vo.setStatus("대여가능");
+		vo.setTitle("풀하우스");
 		new BookDao().insert(vo);
 	}
 

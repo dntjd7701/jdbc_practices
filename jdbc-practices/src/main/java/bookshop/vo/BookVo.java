@@ -39,7 +39,8 @@ public class BookVo {
 	}
 	@Override
 	public String toString() {
-		return "BookVo [no=" + no + ", title=" + title + ", status=" + status + ", authorNo=" + authorNo
-				+ ", authorName=" + authorName + "]";
+//		return "BookVo [no=" + no + ", title=" + title + ", status=" + status + ", authorNo=" + authorNo
+//				+ ", authorName=" + authorName + "]";
+		return "책 제목:" + title + ", 저자:" + authorName + ", 대여 유무:" + status; 
 	}
 }
