@@ -27,7 +27,7 @@ public class BookMall {
 		insertCategory("소설");
 		insertCategory("사회");
 		insertCategory("자기계발");
-		System.out.println("======================");
+		System.out.println();
 		List<CategoryVo> categoryList = new CategoryDao().findAll();
 		showInfo(categoryList);
 
@@ -36,7 +36,7 @@ public class BookMall {
 		insertBook(13320, "하품의 언덕", 1);
 		insertBook(16200, "백신 거부자들", 2);
 		insertBook(15120, "사는게 정답이 있으려나 ?", 3);
-		System.out.println("======================");
+		System.out.println();
 		List<BookVo> bookList = new BookDao().findAll();
 		showInfo(bookList);
 
@@ -44,7 +44,7 @@ public class BookMall {
 		division("Customer");
 		insertCustomer("우성", "010 5252 1455", "ccc@gmail.com", "125hjlkhj");
 		insertCustomer("은영", "010 3523 4263", "aaa@gmail.com", "asdf791j");
-		System.out.println("======================");
+		System.out.println();
 		List<CustomerVo> customerList = new CustomerDao().findAll();
 		showInfo(customerList);
 
@@ -52,7 +52,6 @@ public class BookMall {
 		division("Order");
 		insertOrder(24543, "해운대", customerList.get(0));
 		insertOrder(12345, "세종", customerList.get(1));
-		System.out.println("======================");
 		// 주문 출력
 //		List<OrderVo> orderList = new OrderDao().findAll();
 //		showInfo(orderList);
@@ -62,13 +61,11 @@ public class BookMall {
 		insertOrderBook(2, 1, 2);
 //		insertOrderBook(bookList.get(1), 3, orderList.get(1));
 //		insertOrderBook(bookList.get(1), 2, orderList.get(1));
-		System.out.println("======================");
+		System.out.println();
 		List<OrderBookVo> orderBookList = new OrderBookDao().findAll();
 		showInfo(orderBookList);
-		
-		
-		System.out.println("======================");
-		System.out.println("주문 리스트입니다.");
+
+		System.out.println();
 		List<OrderVo> orderList = new OrderDao().findAll();
 		showInfo(orderList);
 		
@@ -77,7 +74,7 @@ public class BookMall {
 		division("Cart");
 		insertCart(2, 1, 1);
 		insertCart(1, 3, 2);
-		System.out.println("======================");
+		System.out.println();
 		List<CartVo> cartList = new CartDao().findAll();
 		showInfo(cartList);
 		
@@ -187,9 +184,8 @@ public class BookMall {
 	}
 
 	private static void division(String table_name) {
-		System.out.println("======================");
-		System.out.println(table_name + "입니다.");
-		System.out.println("======================");
+		System.out.println();
+		System.out.println("====== "+ table_name + "입니다. =====" );
 	}
 
 }
