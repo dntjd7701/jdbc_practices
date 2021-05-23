@@ -9,7 +9,6 @@ public class CategoryDaoTest {
 
 	public static void main(String[] args) {
 //		insertTest();
-		
 		findAllTest();
 		
 

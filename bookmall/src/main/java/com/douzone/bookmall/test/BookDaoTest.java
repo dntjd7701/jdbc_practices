@@ -10,7 +10,11 @@ public class BookDaoTest {
 	public static void main(String[] args) {
 //		insertTest();
 		findAllTest();
-
+//		new BookDao().delete(1);
+	}
+	private static void deleteTest() {
+		BookVo vo = null;
+		
 	}
 	private static void findAllTest() {
 		List<BookVo> list = new BookDao().findAll();

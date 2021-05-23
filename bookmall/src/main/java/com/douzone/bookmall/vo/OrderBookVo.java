@@ -52,8 +52,10 @@ public class OrderBookVo {
 	
 	@Override
 	public String toString() {
-		return "OrderBookVo [책번호=" + book_no + ", 제목=" + book_title + ", 가격=" + book_price + ", 수량=" + amount
-				+ ", 주문번호=" + orderNo + "]";
+//		return "OrderBookVo [책번호=" + book_no + ", 제목=" + book_title + ", 가격=" + book_price + ", 수량=" + amount
+//				+ ", 주문번호=" + orderNo + "]";
+		return "주문 도서 정보 ) 제목 : " + book_title + ", 가격 : " + book_price + ", 수량 : " + amount
+				+ ", 주문번호 : " + orderNo;
 	}
 	
 

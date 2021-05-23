@@ -12,6 +12,7 @@ public class OrderVo {
 //	and b.no = ob.book_no;
 	
 // 번호, 주문번호, 고객명, 배송지, 수량, 총 가격 
+	
 	private int order_no;
 	private int orderNo;
 	private String customer_name;
@@ -65,9 +66,12 @@ public class OrderVo {
 	}
 	@Override
 	public String toString() {
-		return "OrderVo [번호=" + order_no + ", 주문번호=" + orderNo + ", 고객명=" + customer_name
-				+ ", 배송지=" + address + ", 수량=" + orderBook_amount + ", 총금액=" + totalPrice
-				+ "]";
+//		return "OrderVo [번호=" + order_no + ", 주문번호=" + orderNo + ", 고객명=" + customer_name
+//				+ ", 배송지=" + address + ", 수량=" + orderBook_amount + ", 총금액=" + totalPrice
+//				+ "]";
+		
+		return "[" + order_no + "] 주문 정보 ) 주문번호 : " + orderNo + ", 고객명 : " + customer_name + ", 배송지 : " + address
+				+ ", 수량=" + orderBook_amount + ", 총금액=" + totalPrice;
 	}
 	
 	

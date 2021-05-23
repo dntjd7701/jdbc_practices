@@ -43,8 +43,10 @@ public class CustomerVo {
 	
 	@Override
 	public String toString() {
-		return "CustomerVo [no=" + no + ", name=" + name + ", number=" + number + ", email=" + email + ", password="
-				+ password + "]";
+//		return "CustomerVo [no=" + no + ", name=" + name + ", number=" + number + ", email=" + email + ", password="
+//				+ password + "]";
+		
+		return "[" + no + "] 고객 정보 ) 이름 : " + name + ", 번호 : " + number + ", email : " + email + ", 비밀번호 : " + password; 
 	}
 	
 	

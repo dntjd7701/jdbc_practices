@@ -22,7 +22,7 @@ public class CategoryVo {
 	@Override
 	public String toString() {
 //		return "CategoryVo [no=" + no + ", genre=" + genre + "]";
-		return "[" + no + "] " + genre; 
+		return "[" + no + "] 카테고리 정보 ) " + genre; 
 	}
 	
 
